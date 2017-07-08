@@ -52,7 +52,7 @@ GLuint CompileShaders(const GLchar** vertexShaderSource, const GLchar** fragment
   //Compile fragment shader
   GLuint fragmentShader( glCreateShader( GL_FRAGMENT_SHADER ) );
   glShaderSource( fragmentShader, 1, fragmentShaderSource, NULL );
-  glCompileShader( vertexShader );
+  glCompileShader( fragmentShader );
   
   //Link vertex and fragment shader together
   GLuint program( glCreateProgram() );
